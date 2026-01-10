@@ -1,15 +1,14 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute } from "@tanstack/react-router";
+import { Hero } from "@/components/hero";
 
-export const Route = createFileRoute('/')({
-  component: App,
-})
+export const Route = createFileRoute("/")({
+	component: App,
+});
 
 function App() {
-  return (
-    <main>
-      <h1 className="text-4xl font-bold font-circular-web text-violet-300">
-        Welcome to the anime landing page
-      </h1>
-    </main>
-  )
+	return (
+		<main>
+			<Hero />
+		</main>
+	);
 }
