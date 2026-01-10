@@ -33,7 +33,7 @@ export const Hero = () => {
 
 	useGSAP(
 		() => {
-			if (hasClicked && nextVideoRef.current !== null) {
+			if (hasClicked) {
 				gsap.set(`#${nextVideoId}`, { visibility: "visible" });
 				gsap.to(`#${nextVideoId}`, {
 					transformOrigin: "center center",
@@ -58,6 +58,24 @@ export const Hero = () => {
 			revertOnUpdate: true,
 		},
 	);
+
+	useGSAP(() => {
+		gsap.set(`#${videoFrameId}`, {
+			clipPath: "polygon(14% 0, 72% 0, 88% 90%, 0 95%)",
+			borderRadius: "0% 0% 40% 10%",
+		});
+		gsap.from(`#${videoFrameId}`, {
+			clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+			borderRadius: "0% 0% 0% 0%",
+			ease: "power1.inOut",
+			scrollTrigger: {
+				trigger: `#${videoFrameId}`,
+				start: "center center",
+				end: "bottom center",
+				scrub: true,
+			},
+		});
+	});
 
 	return (
 		<div className="relative h-dvh w-screen overflow-x-hidden">
