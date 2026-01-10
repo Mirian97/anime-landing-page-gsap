@@ -1,10 +1,13 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef, useState } from "react";
 import { TiLocationArrow } from "react-icons/ti";
 import { getHeroVideoSrc } from "@/helpers/get-hero-video-src";
 import { Button } from "./button";
 import { VideoPreview } from "./video-preview";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const videoFrameId = "video-frame";
 const nextVideoId = "next-video";
@@ -143,7 +146,6 @@ export const Hero = () => {
 							Enter the Metagame Layer <br /> Unleash the Play Economy
 						</p>
 						<Button
-							id="watch-trailer"
 							title="Watch trailer"
 							leftIcon={<TiLocationArrow />}
 							className="bg-yellow-300 flex-center gap-1"
