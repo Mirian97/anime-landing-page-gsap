@@ -9,7 +9,7 @@ export const AnimatedTitle: FC<ComponentProps<"div">> = ({
 	title,
 	className,
 }) => {
-	const containerRef = useRef(null);
+	const containerRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
 		const ctx = gsap.context(() => {
