@@ -1,4 +1,3 @@
-import clsx from "clsx";
 import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 import { TiLocationArrow } from "react-icons/ti";
