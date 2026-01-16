@@ -1,4 +1,4 @@
-# Anime Landing Page + GSAP
+# Zentry Games
 
 A modern anime-style landing page built with React, Vite, Tailwind CSS, and GSAP, focused on smooth animations, scroll-based interactions, and immersive UI effects.
 
