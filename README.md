@@ -26,7 +26,7 @@ Live Demo: https://zentry-games-lp.vercel.app/
 
 ```bash
 # Clone the repo
-git clone https://github.com/Mirian97/anime-landing-page-gsap.git
+git clone git@github.com:Mirian97/zentry-games-gsap.git
 
 # Go to project folder
 cd anime-landing-page-gsap
