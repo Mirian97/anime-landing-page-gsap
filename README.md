@@ -2,7 +2,7 @@
 
 A modern anime-style landing page built with React, Vite, Tailwind CSS, and GSAP, focused on smooth animations, scroll-based interactions, and immersive UI effects.
 
-Live Demo: https://anime-lp-gsap.vercel.app/
+Live Demo: https://zentry-games-lp.vercel.app/
 
 ## ✨ Features
 

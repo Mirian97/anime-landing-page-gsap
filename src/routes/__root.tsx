@@ -1,10 +1,12 @@
 import { TanStackDevtools } from '@tanstack/react-devtools'
 import { Outlet, createRootRoute } from '@tanstack/react-router'
 import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
+import { ReactLenis } from 'lenis/react'
 
 export const Route = createRootRoute({
   component: () => (
     <>
+      <ReactLenis root />
       <Outlet />
       <TanStackDevtools
         config={{

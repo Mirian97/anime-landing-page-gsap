@@ -1,5 +1,5 @@
-import type { ComponentProps, ReactNode } from "react";
 import { cn } from "@/lib/utils";
+import type { ComponentProps, ReactNode } from "react";
 
 export const Button = ({
 	id,
@@ -7,6 +7,7 @@ export const Button = ({
 	rightIcon,
 	leftIcon,
 	className,
+	...props
 }: ComponentProps<"button"> & {
 	rightIcon?: ReactNode;
 	leftIcon?: ReactNode;
@@ -14,6 +15,7 @@ export const Button = ({
 	return (
 		<button
 			id={id}
+			{...props}
 			className={cn(
 				"group relative z-10 w-fit cursor-pointer overflow-hidden rounded-full bg-violet-50 px-7 py-3 text-black",
 				className,

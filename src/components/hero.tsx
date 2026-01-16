@@ -1,9 +1,9 @@
+import { getHeroVideoSrc } from "@/helpers/get-hero-video-src";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef, useState } from "react";
 import { TiLocationArrow } from "react-icons/ti";
-import { getHeroVideoSrc } from "@/helpers/get-hero-video-src";
 import { Button } from "./button";
 import { VideoPreview } from "./video-preview";
 
@@ -148,6 +148,7 @@ export const Hero = () => {
 						<Button
 							title="Watch trailer"
 							leftIcon={<TiLocationArrow />}
+							onClick={()=> window.open("https://www.youtube.com/watch?v=x1_-btXPWpc", "_blank", "noreferrer")}
 							className="bg-yellow-300 flex-center gap-1"
 						/>
 					</div>
